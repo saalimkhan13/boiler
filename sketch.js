@@ -5,8 +5,8 @@ var go1,go2,go3,go4;
 function setup() {
   createCanvas(1200,800);
  fixedrect=createSprite(600, 400, 50, 80);
- //fixedrect.shapeColor="blue";
- //fixedrect.debug=true;
+ fixedrect.shapeColor="blue";
+ fixedrect.debug=true;
  movingrect=createSprite(400,200,80,50);
  movingrect.shapeColor="lightBlue";
  movingrect.debug=true;
@@ -23,7 +23,7 @@ function setup() {
 }
 
 function draw() {
-  background(180,200,100);  
+  background(200,200,200);  
   movingrect.x=World.mouseX;
   movingrect.y=World.mouseY;
   console.log(movingrect.x-fixedrect.x);
