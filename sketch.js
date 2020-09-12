@@ -23,7 +23,7 @@ function setup() {
 }
 
 function draw() {
-  background(255,255,255);  
+  background(180,200,100);  
   movingrect.x=World.mouseX;
   movingrect.y=World.mouseY;
   console.log(movingrect.x-fixedrect.x);
