@@ -5,8 +5,8 @@ var go1,go2,go3,go4;
 function setup() {
   createCanvas(1200,800);
  fixedrect=createSprite(600, 400, 50, 80);
- fixedrect.shapeColor="blue";
- fixedrect.debug=true;
+ //fixedrect.shapeColor="blue";
+ //fixedrect.debug=true;
  movingrect=createSprite(400,200,80,50);
  movingrect.shapeColor="lightBlue";
  movingrect.debug=true;
@@ -45,7 +45,7 @@ function isTouching(object1,object2){
   if(Object1.x-object2.x<object1.width/2+object2.width/2 &&                                                                        
    object2.x-object1.x<object2.width/2+object1.width/2&&
    object1.y-object2.y<Object1.height/2+object2.height/2 &&                                                                        
-   object2.y-object2.y<object2.height/2+object1.height/2){
+   object2.y-object1.y<object2.height/2+object1.height/2){
      return true;
  }
   else {
